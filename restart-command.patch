@@ -1,0 +1,11 @@
+diff -up vino-2.28.0/server/vino-main.c.restart-command vino-2.28.0/server/vino-main.c
+--- vino-2.28.0/server/vino-main.c.restart-command	2009-09-27 19:05:09.499279814 -0400
++++ vino-2.28.0/server/vino-main.c	2009-09-27 19:52:28.846036969 -0400
+@@ -78,6 +79,7 @@ main (int argc, char **argv)
+     }
+ 
+   client = egg_sm_client_get ();
++  egg_sm_client_set_mode (EGG_SM_CLIENT_MODE_NO_RESTART);
+   g_signal_connect (client, "quit",
+ 		    G_CALLBACK (gtk_main_quit), NULL);
+ 

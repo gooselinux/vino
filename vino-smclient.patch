@@ -1,0 +1,12 @@
+diff -up vino-2.27.5/configure.in.smclient vino-2.27.5/configure.in
+--- vino-2.27.5/configure.in.smclient	2009-07-28 00:55:23.216690587 -0400
++++ vino-2.27.5/configure.in	2009-07-28 00:55:41.568688839 -0400
+@@ -60,7 +60,7 @@ PKG_CHECK_MODULES(EGG, gtk+-2.0 >= $GTK_
+ AC_SUBST(EGG_LIBS)
+ AC_SUBST(EGG_CFLAGS)
+ 
+-PKG_CHECK_MODULES(EGG_SMCLIENT, gtk+-2.0)
++PKG_CHECK_MODULES(EGG_SMCLIENT, gtk+-2.0 sm)
+ AC_SUBST(EGG_SMCLIENT_LIBS)
+ AC_SUBST(EGG_SMCLIENT_CFLAGS)
+ 
